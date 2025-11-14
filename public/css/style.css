@@ -1,5 +1,49 @@
+:root {
+  --primary-color: #4e0070;
+  --secondary-color: #4c79d3;
+  --text-color: #ffffff;
+}
+
 #login {
-  background: linear-gradient(120deg, #4c79d3 44.9%, #fff 45%) no-repeat fixed;
+  background: linear-gradient(120deg, var(--secondary-color) 44.9%, #fff 45%) no-repeat fixed;
+}
+#app {
+  background: linear-gradient(120deg, #fff 44.9%, var(--secondary-color) 45%) no-repeat fixed;
+}
+/* Header */
+header .navbar-expand-md {
+  /* border-bottom: 1px solid #bebcbc !important; */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  padding: 5px;
+}
+
+/* Logo */
+.img-logo {
+  width: 6rem;
+}
+/* Botão home */
+.btn {
+  color: var(--secondary-color);
+  border-radius: 6px;
+  /* font-size: 16px !important; */
+}
+.btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.color-primary {
+  color: var(--primary-color);
+}
+.color-secondary {
+  color: var(--secondary-color);
+}
+/* Ícone detail */
+.icon-detail {
+  color: var(--primary-color);
+  font-size: 50px;
+  margin-right: 10px;
+  vertical-align: ;
 }
 .text-login {
   color: #fff;
@@ -10,23 +54,39 @@
   position: absolute;
   bottom: 100px;
 }
+.button-default {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+}
+
 .button-login {
-  background-color: #4e0070;
+  background-color: var(--primary-color);
   border: none;
   width: 50%;
   margin: 0 25%;
   color: #fff;
   border-radius: 8px;
 }
-.button-login:hover {
-  background: #4c79d3;
+:is(.button-login, .button-default):hover {
+  background: var(--secondary-color);
   color: #fff;
 }
 .link-default {
-  color: #4e0070;
+  color: var(--primary-color);
   font-weight: 500;
   cursor: pointer;
 }
 .link-default:hover {
-  color: #4c79d3;
+  color: var(--secondary-color);
+}
+main {
+  padding-top: 56px;
+}
+/* Informações */
+.info {
+  background: #fff;
+  border-radius: 20px 20px 0 0;
+  padding: 20px 0 0;
 }
