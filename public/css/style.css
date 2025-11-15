@@ -22,20 +22,10 @@ header .navbar-expand-md {
   width: 6rem;
 }
 /* Botão home */
-.btn {
-  color: var(--secondary-color);
-  border-radius: 6px;
-  /* font-size: 16px !important; */
-}
-.btn:hover {
-  background-color: var(--primary-color);
-  color: #fff;
-  transition: all 0.3s ease-in-out;
-}
 .btn.color-primary {
   color: var(--primary-color);
 }
-.btn.color-primary:hover {
+:is(.btn.color-primary,.btn.color-secondary):hover {
   background-color: var(--primary-color);
   color: #fff;
   transition: all 0.3s ease-in-out;
@@ -48,7 +38,7 @@ header .navbar-expand-md {
   color: var(--primary-color);
   font-size: 50px;
   margin-right: 10px;
-  vertical-align: ;
+  vertical-align: middle;
 }
 .text-login {
   color: #fff;
