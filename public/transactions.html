@@ -39,21 +39,21 @@
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a title="home" class="nav-link active" aria-current="page" href="home.html"
-                ><button class="btn color-primary" type="button" title="botão home"><i class="bi bi-house-door-fill fs-4"></i></button
+                ><button class="btn" type="button" title="botão home"><i class="bi bi-house-door-fill fs-4"></i></button
               ></a>
               <a title="home" class="nav-link active" aria-current="page" href="transactions.html"
-                ><button class="btn" type="button" title="botão transactional"><i class="bi bi-currency-exchange fs-4"></i></button
+                ><button class="btn color-primary" type="button" title="botão transactional"><i class="bi bi-currency-exchange fs-4"></i></button
               ></a>
             </div>
             <!-- Dropdown -->
             <div class="dropdown">
-                <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="botão transactions"><i class="bi bi-person-circle fs-4"></i></button
-              ></a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Sair</a></li>
-                 
-                </ul>
-              </div>
+              <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" title="botão transactions">
+                <i class="bi bi-person-circle fs-4"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Sair</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -62,65 +62,47 @@
       <div class="container-lg pt-md-5">
         <!-- Primeira linha -->
         <div class="row">
-          <div class="col d-flex justify-content-start  align-items-center">
+          <div class="col d-flex justify-content-start align-items-center">
             <i class="bi bi-currency-exchange color-primary icon-detail"></i>
             <span class="fs-2">Lançamentos</span>
           </div>
           <div class="col d-flex justify-content-end align-items-center">
             <div class="text-center">
-              <img src="./assets/images/coins-small.png" alt="image coins small" srcset="">
+              <img src="./assets/images/coins-small.png" alt="image coins small" srcset="" />
             </div>
           </div>
         </div>
         <!-- Segunda linha -->
-        <div class="row ">
+        <div class="row">
           <div class="col-12 info shadow-lg">
             <div class="container">
               <!-- Primeir linha -->
               <div class="row">
-                <!-- Primeira coluna de entrada  -->
-                <div class="col-6">
-                  <span class="fs-4">Entradas
-                  <i class="bi bi-arrow-down-circle fs-2  align-middle"></i></span> 
+                <!-- Primeira coluna de tabela  -->
+                <div class="col">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Data</th>
+                        <th scope="col">Valor</th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Descrição</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">08/11/2021</th>
+                        <td>R$ 50,00</td>
+                        <td>Saída</td>
+                        <td>Gasolina</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <!-- Segunda coluna de saída-->
-                <div class="col-6">
-                  <span class="fs-4">Saídas
-                  <i class="bi bi-arrow-up-circle fs-2 align-middle"></i></span>
-                </div>
-                <!-- Traço -->
-                 <div class="col-12">
-                  <hr>
-                 </div>
               </div>
-              <!-- Segunda linha -->
-              <div class="row">
-                <!-- Primeira coluna de entrada  -->
-                <div class="col-6">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col">
-                        R$ 1000,00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Segunda coluna de saída-->
-                <div class="col-6">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col">
-                        R$ 500,00
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- Terceira coluna -->
-                <div class="col-12">
-                  <button type="button" class="btn button-default">Ver todas</button>
-                </div>
             </div>
           </div>
+        </div>
       </div>
     </main>
     <!-- Option 1: Bootstrap Bundle with Popper -->
