@@ -32,8 +32,13 @@ header .navbar-expand-md {
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
-.color-primary {
+.btn.color-primary {
   color: var(--primary-color);
+}
+.btn.color-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 .color-secondary {
   color: var(--secondary-color);
