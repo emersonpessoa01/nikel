@@ -119,8 +119,43 @@
                 <div class="col-12">
                   <button type="button" class="btn button-default">Ver todas</button>
                 </div>
+              </div>
             </div>
           </div>
+        </div>
+        <button class="btn button-float" title="Botão do modal" type="button"><i class="bi bi-plus"></i></button>
+      </div>
+      <div class="modal fade" id="transactional-modal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="color-secondary">Adicionar lançamento</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <!-- Formulário Modal -->
+            <form id="create-form">
+              <div class="modal-body">
+                <div class="mb-3">
+                  <label for="email-create-input-modal" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email-create-input-modal" aria-describedby="emailCreateHelp" autofocus />
+                  <div id="emailCreateHelp" class="form-text">Utilize o seu e-mail para criar a conta.</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="password-create-input-modal" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="password-create-input-modal" />
+                  <div class="form-text">Utilize uma senha fácil de lembrar e anote para não esquecer.</div>
+                </div>
+              </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary button-cancel" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn button-default">Criar conta</button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <!-- Option 1: Bootstrap Bundle with Popper -->
