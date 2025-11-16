@@ -109,3 +109,8 @@ main {
   padding: 20px 0 0;
 }
 
+/* Estilização form do index */
+#link-conta {
+  cursor: pointer;
+}
+
