@@ -4,6 +4,34 @@
   --text-color: #ffffff;
 }
 
+html {
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  width: .5rem;
+  height: 0.25px;
+}
+html::-webkit-scrollbar-track {
+  /* background: transparent; */
+  background: inset 0 0 5px #a5aaad;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5rem;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+  cursor: pointer;
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--secondary-color);
+}
+
 #login {
   background: linear-gradient(120deg, var(--secondary-color) 44.9%, #fff 45%) no-repeat fixed;
 }
