@@ -168,6 +168,15 @@ main {
   color: var(--primary-color) !important;
 }
 
+/* Botão de sair */
+.logout {
+  min-width: 1rem !important;
+  left: -5px !important;
+}
+.menu {
+  /* margin-right: 20px; */
+}
+
 /* ---- Tablet: centralizar e remover posição absoluta ---- */
 @media (max-width: 1140px) {
   .coins {
