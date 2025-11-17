@@ -29,8 +29,9 @@ document.getElementById("transaction-form").addEventListener("submit", function 
   saveData(data);
   event.target.reset();
   myModal.hide();
-
+  
   alert("Lançamento adicionado com sucesso!");
+  getCashIn();
 });
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
