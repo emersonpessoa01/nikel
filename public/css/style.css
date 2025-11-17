@@ -7,6 +7,7 @@
   --text-light-purple: #afa4be;
   --label: #b680ff;
   --color-background: #e2dbdb;
+  --color-background-light: #f7f5f5;
 }
 
 html {
@@ -49,10 +50,10 @@ p {
 }
 
 #login {
-  background: linear-gradient(120deg, var(--secondary-color) 44.9%, var(--color-background) 45%) no-repeat fixed;
+  background: linear-gradient(120deg, var(--secondary-color) 44.9%, var(--color-background-light) 45%) no-repeat fixed;
 }
 #app {
-  background: linear-gradient(120deg, #fff 44.9%, var(--secondary-color) 45%) no-repeat fixed;
+  background: linear-gradient(120deg, var(--color-background-light) 44.9%, var(--secondary-color) 45%) no-repeat fixed;
 }
 /* Header */
 header .navbar-expand-md {
