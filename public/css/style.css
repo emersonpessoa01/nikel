@@ -6,6 +6,7 @@
   --text-gray-color: #252227;
   --text-light-purple: #afa4be;
   --label: #b680ff;
+  --color-background: #e2dbdb;
 }
 
 html {
@@ -30,6 +31,11 @@ html::-webkit-scrollbar-thumb:hover {
   background: var(--secondary-color);
   cursor: pointer;
 }
+html::-webkit-scrollbar-button {
+  display: none;
+  height: 0;
+  width: 0;
+}
 
 ::selection {
   color: var(--text-color);
@@ -43,7 +49,7 @@ p {
 }
 
 #login {
-  background: linear-gradient(120deg, var(--secondary-color) 44.9%, #fff 45%) no-repeat fixed;
+  background: linear-gradient(120deg, var(--secondary-color) 44.9%, var(--color-background) 45%) no-repeat fixed;
 }
 #app {
   background: linear-gradient(120deg, #fff 44.9%, var(--secondary-color) 45%) no-repeat fixed;
