@@ -194,7 +194,8 @@ main {
 }
 @media (max-width: 768px) {
   p {
-    color: var(--text-light-purple);
+    /* color: var(--text-light-purple); */
+    text-shadow: 2px 0px 3px rgba(78, 0, 163, 0.8);
   }
   .form-text {
     color: var(--text-light-purple) !important;
