@@ -200,8 +200,12 @@ main {
     color: var(--text-light-purple) !important;
   }
   .form-label {
-    color: var(--label) !important;
+    /* color: var(--label) !important; */
     font-weight: 500;
+    line-height: 1;
+    color: #fff;
+    text-shadow: 2px 0px 3px rgba(78, 0, 163, 0.8);
+
   }
   .form-check-label {
     color: var(--text-light-purple) !important;
