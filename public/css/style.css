@@ -164,6 +164,9 @@ main {
   left: 40%;
   top: 70%;
 }
+.fs-2 {
+  color: var(--primary-color) !important;
+}
 
 /* ---- Tablet: centralizar e remover posição absoluta ---- */
 @media (max-width: 1140px) {
