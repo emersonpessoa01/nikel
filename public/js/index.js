@@ -51,7 +51,7 @@ document.getElementById("create-form").addEventListener("submit", function (even
   saveAccount({
     login: email,
     password: password,
-    transacions: [],
+    transactions: [],
   });
   myModal.hide();
 

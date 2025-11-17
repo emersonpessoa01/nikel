@@ -5,27 +5,35 @@ const session = localStorage.getItem("session");
 let data = {
   transactions: [],
 };
-const transaction = document.getElementById("transaction-form");
+
 
 const logout = document.getElementById("button-logout");
 
 checkLogged();
 
 // Funçao Adicionar lançamento
-transaction.addEventListener("submit", function (event) {
+document.getElementById("transaction-form").addEventListener("submit", function (event) {
   event.preventDefault();
   const value = parseFloat(document.getElementById("value-input").value);
   const description = document.getElementById("description-input").value;
   const date = document.getElementById("date-input").value;
   const type = document.querySelector('input[name="type-input"]:checked').value;
 
+  
+
   //  adicionar lançamento
-  data.transactions.push({
+  data.transactions.unshift({
     value: value,
     type: type,
     description: description,
     date: date,
   });
+
+    saveData(data);
+    event.target.reset();
+    myModal.hide();
+
+    alert("Lançamento adicionado com sucesso!");
 });
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
@@ -53,3 +61,8 @@ logout.addEventListener("click", function () {
   localStorage.removeItem("session");
   window.location.href = "index.html";
 });
+
+// Função salvar dados no localStorage
+function saveData(data) {
+  localStorage.setItem(data.login, JSON.stringify(data));
+}
