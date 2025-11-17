@@ -5,6 +5,7 @@
   --text-color: #ffffff;
   --text-gray-color: #252227;
   --text-light-purple: #afa4be;
+  --label: #b680ff;
 }
 
 html {
@@ -176,7 +177,14 @@ main {
   p {
     color: var(--text-light-purple);
   }
-  .form-text{
-    color: var(--primary-color) !important;
+  .form-text {
+    color: var(--text-light-purple) !important;
+  }
+  .form-label {
+    color: var(--label) !important;
+    font-weight: 500;
+  }
+  .form-check-label {
+    color: var(--text-light-purple) !important;
   }
 }
