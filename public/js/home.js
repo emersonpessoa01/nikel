@@ -99,7 +99,7 @@ function getCashIn() {
                 <div class="container p-0">
                     <div class="row">
                     <div class="col-12 col-md-8">
-                        <p>${cashIn[i].description}</p>
+                        <p class="description">${cashIn[i].description}</p>
                     </div>
                     <div class="col-12 col-md-3 d-flex justify-content-end">
                         <span>${formattedDate}

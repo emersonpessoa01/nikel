@@ -166,6 +166,12 @@ main {
 }
 .fs-2 {
   color: var(--primary-color) !important;
+  font-size: 1.2rem !important;
+}
+.description {
+  color: var(--text-gray-color);
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 /* Botão de sair */
@@ -200,7 +206,7 @@ main {
   .form-text {
     color: var(--text-light-purple) !important;
   }
-  
+
   label[for="email-input"],
   label[for="password-input"] {
     /* color: var(--label) !important; */
