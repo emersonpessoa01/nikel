@@ -6,6 +6,8 @@ let data = {
   transactions: [],
 };
 
+const logout = document.getElementById("button-logout");
+
 checkLogged();
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
@@ -27,3 +29,10 @@ function checkLogged() {
     }
     console.log(data);
 }
+
+//Logout do usuário
+logout.addEventListener("click", function () {
+  sessionStorage.removeItem("logged");
+  localStorage.removeItem("session");
+  window.location.href = "index.html";
+});
