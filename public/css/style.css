@@ -142,3 +142,25 @@ main {
   cursor: pointer;
 }
 
+/* ---- Desktop: posição absoluta (mantém como está) ---- */
+.coins {
+  position: absolute;
+  left: 40%;
+  top: 70%;
+}
+
+/* ---- Tablet: centralizar e remover posição absoluta ---- */
+@media (max-width: 1140px) {
+  .coins {
+    position: static !important;
+    display: block !important;
+    margin: 20px auto 0 auto; /* Centraliza */
+    transform: none !important;
+    max-width: 60%; /* opcional — para não ficar gigante */
+  }
+}
+@media (max-width: 991px) {
+  .coins {
+    display: none !important;
+  }
+}
