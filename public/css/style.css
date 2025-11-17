@@ -200,7 +200,9 @@ main {
   .form-text {
     color: var(--text-light-purple) !important;
   }
-  .form-label {
+  
+  label[for="email-input"],
+  label[for="password-input"] {
     /* color: var(--label) !important; */
     font-weight: 500;
     line-height: 1;
