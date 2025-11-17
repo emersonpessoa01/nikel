@@ -1,7 +1,10 @@
 :root {
   --primary-color: #4e0070;
-  --secondary-color: #4c79d3;
+  /* --secondary-color: #4c79d3; */
+  --secondary-color: #23369a;
   --text-color: #ffffff;
+  --text-gray-color: #252227;
+  --text-light-purple: #afa4be;
 }
 
 html {
@@ -171,7 +174,7 @@ main {
 }
 @media (max-width: 768px) {
   p {
-    color: var(--primary-color);
+    color: var(--text-light-purple);
   }
   .form-text{
     color: var(--primary-color) !important;
