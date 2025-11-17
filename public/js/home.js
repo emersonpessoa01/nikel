@@ -2,6 +2,9 @@
 const myModal = new bootstrap.Modal(document.getElementById("transaction-modal"));
 let logged = sessionStorage.getItem("logged");
 const session = localStorage.getItem("session");
+let data = {
+  transactions: [],
+};
 
 checkLogged();
 
@@ -16,4 +19,11 @@ function checkLogged() {
     window.location.href = "index.html";
     return;
   }
+
+  //Capturar dados do usuário
+    const dataUser = localStorage.getItem(logged);
+    if (dataUser) {
+      data = JSON.parse(dataUser);
+    }
+    console.log(data);
 }
