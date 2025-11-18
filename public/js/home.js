@@ -189,14 +189,13 @@ function getTotal() {
   let total = 0;
 
   transactions.forEach((item) => {
-    if (item.type === "1") {
-      total += item.value;
-    } else {
-      total -= item.value;
-    }
+    item.type === "1" ? (total += item.value) : (total -= item.value);
   });
-  document.getElementById("total").innerHTML = `${Number(total).toLocaleString("pt-BR", {
+
+  //variável com o valor formatado
+  const formattedTotal = Number(total).toLocaleString("pt-BR", {
     style: "currency",
     currency: "BRL",
-  })}`;
+  });
+  document.getElementById("total").innerHTML = `${formattedTotal}`;
 }
