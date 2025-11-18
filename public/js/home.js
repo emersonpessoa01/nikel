@@ -32,6 +32,7 @@ document.getElementById("transaction-form").addEventListener("submit", function 
   
   alert("Lançamento adicionado com sucesso!");
   getCashIn();
+  getCashOut();
 });
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
@@ -52,6 +53,7 @@ function checkLogged() {
   }
   //   console.log(data);
   getCashIn();
+  getCashOut();
 }
 
 //Logout do usuário
@@ -115,4 +117,55 @@ function getCashIn() {
   }
 }
 
-// Função para Mostrar transações na tela
+///Função para trazer as entradas do tipo 2
+function getCashOut() {
+  const transactions = data.transactions;
+  const cashIn = transactions.filter((item) => item.type === "2");
+  //   console.log(cashIn);
+
+  // Mostrar na tela
+  if (cashIn.length) {
+    let cashInHtml = ``;
+    let limit = 0;
+
+    if (cashIn.length > 5) {
+      limit = 5;
+    } else {
+      limit = cashIn.length;
+    }
+
+    for (let i = 0; i < limit; i++) {
+      //   console.log(i);
+      //   console.log(cashIn[i]);
+
+      const date = new Date(cashIn[i].date);
+      const formattedDate = date.toLocaleDateString("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      });
+      cashInHtml += `
+            <div class="row mb-4">
+                <div class="col-12">
+                <h3 class="fs-2">R$ ${cashIn[i].value.toFixed(2)}</h3>
+                <div class="container p-0">
+                    <div class="row">
+                    <div class="col-12 col-md-8">
+                        <p class="description">${cashIn[i].description}</p>
+                    </div>
+                    <div class="col-12 col-md-3 d-flex justify-content-end">
+                        <span>${formattedDate}
+                        </span>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        `;
+    }
+    document.getElementById("cash-out-list").innerHTML = cashInHtml;
+  }
+}
+
+
+
