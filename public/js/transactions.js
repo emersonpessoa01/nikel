@@ -76,8 +76,7 @@ function getTransactions() {
 
       // Converter a data salva na transação para um objeto Date
       // e formatar no padrão brasileiro (dd/mm/aaaa)
-      const partes = item.date.split("-");
-      const date = new Date(partes[0], partes[1] - 1, partes[2]);
+      const date = new Date(item.date + "T00:00:00");
 
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",

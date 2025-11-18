@@ -152,8 +152,7 @@ function getCashOut() {
       // Converter a data salva na transação para um objeto Date
       // e formatar no padrão brasileiro (dd/mm/aaaa)
       // const date = new Date(cashIn[i].date);
-      const partes = cashIn[i].date.split("-");
-      const date = new Date(partes[0], partes[1] - 1, partes[2]);
+      const date = new Date(cashIn[i].date + "T00:00:00");
 
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",
