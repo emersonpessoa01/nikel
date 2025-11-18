@@ -29,10 +29,11 @@ document.getElementById("transaction-form").addEventListener("submit", function 
   saveData(data);
   event.target.reset();
   myModal.hide();
-  
+
   alert("Lançamento adicionado com sucesso!");
   getCashIn();
   getCashOut();
+  getTotal();
 });
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
@@ -54,6 +55,7 @@ function checkLogged() {
   //   console.log(data);
   getCashIn();
   getCashOut();
+  getTotal();
 }
 
 //Logout do usuário
@@ -167,5 +169,17 @@ function getCashOut() {
   }
 }
 
-
-
+// Função total
+function getTotal() {
+  const transactions = data.transactions;
+  // console.log(transactions);
+  let total = 0;
+  transactions.forEach((item) => {
+    if (item.type === "1") {
+      total += item.value;
+    } else {
+      total -= item.value;
+    }});
+  document.getElementById("total").innerHTML = `R$ ${total.toFixed(2)}`;
+  
+}
