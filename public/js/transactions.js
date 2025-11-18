@@ -73,7 +73,9 @@ function getTransactions() {
   if (transactions.length) {
     transactions.forEach((item) => {
       let type = item.type === "2" ? "Saída" : "Entrada";
-
+    
+      // Converter a data salva na transação para um objeto Date
+      // e formatar no padrão brasileiro (dd/mm/aaaa)
       const date = new Date(item.date);
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",
@@ -84,6 +86,8 @@ function getTransactions() {
       //   const formattedValue = Number(item.value)
       //     .toFixed(2)
       //     .replace(".", ",");
+      
+      // formatar valores monetários usando toLocaleString em pt-BR
       const formattedValue = Number(item.value).toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",

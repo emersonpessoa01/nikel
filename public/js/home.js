@@ -149,12 +149,16 @@ function getCashOut() {
       //   console.log(i);
       //   console.log(cashIn[i]);
 
+      // Converter a data salva na transação para um objeto Date
+      // e formatar no padrão brasileiro (dd/mm/aaaa)
       const date = new Date(cashIn[i].date);
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",
         month: "2-digit",
         year: "numeric",
       });
+
+      // formatar valores monetários usando toLocaleString em pt-BR
       const formattedValue = Number(cashIn[i].value).toLocaleString("pt-BR", {
         style: "currency",
         currency: "BRL",
