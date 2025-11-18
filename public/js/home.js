@@ -7,6 +7,9 @@ let data = {
 };
 
 const logout = document.getElementById("button-logout");
+document.getElementById("transactions-button").addEventListener("click", function(){
+  window.location.href = "transactions.html";
+});
 
 checkLogged();
 
