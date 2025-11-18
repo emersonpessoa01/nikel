@@ -11,7 +11,6 @@ document.getElementById("transactions-button").addEventListener("click", functio
   window.location.href = "transactions.html";
 });
 
-checkLogged();
 
 // Funçao Adicionar lançamento
 document.getElementById("transaction-form").addEventListener("submit", function (event) {
@@ -38,6 +37,8 @@ document.getElementById("transaction-form").addEventListener("submit", function 
   getCashOut();
   getTotal();
 });
+
+checkLogged();
 
 // Verificar se está logado, caso não esteja, redirecionar para index.html
 function checkLogged() {
