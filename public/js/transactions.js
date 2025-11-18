@@ -76,7 +76,8 @@ function getTransactions() {
     
       // Converter a data salva na transação para um objeto Date
       // e formatar no padrão brasileiro (dd/mm/aaaa)
-      const date = new Date(item.date);
+      const [year, month, day] = cashIn[i].date.split("-");
+      const date = new Date(year, month - 1, day);
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",
         month: "2-digit",
@@ -86,7 +87,7 @@ function getTransactions() {
       //   const formattedValue = Number(item.value)
       //     .toFixed(2)
       //     .replace(".", ",");
-      
+
       // formatar valores monetários usando toLocaleString em pt-BR
       const formattedValue = Number(item.value).toLocaleString("pt-BR", {
         style: "currency",
