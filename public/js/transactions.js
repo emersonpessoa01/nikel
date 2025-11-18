@@ -61,3 +61,9 @@ logout.addEventListener("click", function () {
 });
 
 
+// Função salvar dados no localStorage
+function saveData(data) {
+  localStorage.setItem(data.login, JSON.stringify(data));
+}
+
+
