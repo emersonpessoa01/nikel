@@ -69,28 +69,36 @@ function saveData(data) {
 function getTransactions() {
   const transactions = data.transactions;
   let transactionsHtml = ``;
-  
+
   if (transactions.length) {
     transactions.forEach((item) => {
-        let type = "Entrada";
-        if (item.type === "2") {
-          type = "Saída";
-        }
-        const date = new Date(item.date);
-        const formattedDate = date.toLocaleDateString("pt-BR",{
-            day: "2-digit",
-            month: "2-digit",
-            year: "numeric",
-        });
-        transactionsHtml += `
-            <tr>
-                <th scope="row">${formattedDate}</th>
-                <td>${item.value.toFixed(2)}</td>
-                <td>${type}</td>
-                <td>${item.description}</td>
-            </tr>
-        `;
+      let type = item.type === "2" ? "Saída" : "Entrada";
+
+      const date = new Date(item.date);
+      const formattedDate = date.toLocaleDateString("pt-BR", {
+        day: "2-digit",
+        month: "2-digit",
+        year: "numeric",
+      });
+
+      //   const formattedValue = Number(item.value)
+      //     .toFixed(2)
+      //     .replace(".", ",");
+      const formattedValue = Number(item.value).toLocaleString("pt-BR", {
+        style: "currency",
+        currency: "BRL",
+      });
+
+      transactionsHtml += `
+        <tr>
+            <th scope="row">${formattedDate}</th>
+            <td>${formattedValue}</td>
+            <td>${type}</td>
+            <td>${item.description}</td>
+        </tr>
+      `;
     });
+
     document.getElementById("transaction-list").innerHTML = transactionsHtml;
   }
 }
