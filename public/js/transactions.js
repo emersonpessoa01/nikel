@@ -26,9 +26,9 @@ document.getElementById("transaction-form").addEventListener("submit", function 
   saveData(data);
   event.target.reset();
   myModal.hide();
+  getTransactions();
 
   alert("Lançamento adicionado com sucesso!");
-
 });
 
 checkLogged();
@@ -50,7 +50,7 @@ function checkLogged() {
     data = JSON.parse(dataUser);
   }
   //   console.log(data);
-  
+  getTransactions();
 }
 
 //Logout do usuário
@@ -60,10 +60,37 @@ logout.addEventListener("click", function () {
   window.location.href = "index.html";
 });
 
-
 // Função salvar dados no localStorage
 function saveData(data) {
   localStorage.setItem(data.login, JSON.stringify(data));
 }
 
-
+// função para buscar toda a lista de transações
+function getTransactions() {
+  const transactions = data.transactions;
+  let transactionsHtml = ``;
+  
+  if (transactions.length) {
+    transactions.forEach((item) => {
+        let type = "Entrada";
+        if (item.type === "2") {
+          type = "Saída";
+        }
+        const date = new Date(item.date);
+        const formattedDate = date.toLocaleDateString("pt-BR",{
+            day: "2-digit",
+            month: "2-digit",
+            year: "numeric",
+        });
+        transactionsHtml += `
+            <tr>
+                <th scope="row">${formattedDate}</th>
+                <td>${item.value.toFixed(2)}</td>
+                <td>${type}</td>
+                <td>${item.description}</td>
+            </tr>
+        `;
+    });
+    document.getElementById("transaction-list").innerHTML = transactionsHtml;
+  }
+}
