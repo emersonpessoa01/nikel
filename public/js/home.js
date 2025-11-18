@@ -149,9 +149,7 @@ function getCashOut() {
       //   console.log(i);
       //   console.log(cashIn[i]);
 
-      // Converter a data salva na transação para um objeto Date
-      // e formatar no padrão brasileiro (dd/mm/aaaa)
-      // const date = new Date(cashIn[i].date);
+       // Formatação de data adicionando sufixo T00:00:00 para evitar inconsistências de timezone no deploy
       const date = new Date(cashIn[i].date + "T00:00:00");
 
       const formattedDate = date.toLocaleDateString("pt-BR", {

@@ -74,10 +74,8 @@ function getTransactions() {
     transactions.forEach((item) => {
       let type = item.type === "2" ? "Saída" : "Entrada";
 
-      // Converter a data salva na transação para um objeto Date
-      // e formatar no padrão brasileiro (dd/mm/aaaa)
+      // Formatação de data adicionando sufixo T00:00:00 para evitar inconsistências de timezone no deploy
       const date = new Date(item.date + "T00:00:00");
-
       const formattedDate = date.toLocaleDateString("pt-BR", {
         day: "2-digit",
         month: "2-digit",
