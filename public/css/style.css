@@ -183,6 +183,23 @@ main {
   /* margin-right: 20px; */
 }
 
+/* Hover nos cards da Home */
+.p-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+
+/*espaçamento interno no container da tabela  */
+.table-responsive {
+  padding: 12px;
+}
+
+/* Removendo as margens laterais do row */
+.row.second{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 /* ---- Tablet: centralizar e remover posição absoluta ---- */
 @media (max-width: 1140px) {
   .coins {
@@ -221,7 +238,11 @@ main {
 }
 
 
-.p-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+
+
+@media (max-width: 576px) {
+  .table-responsive {
+    padding: 12px;
+  }
 }
+
