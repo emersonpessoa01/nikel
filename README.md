@@ -15,6 +15,7 @@ Segue as páginas de divulgações:
 </a>
 
 ## Descrição
+
 <a href="https://nikel-web.vercel.app/" target="_blank">
   <img src="./public/assets/images/nikel-logo.png" alt="Logo do Aplicacativo Nikel" tilte="Logo do Aplicacativo Nikel"/>
 </a>
@@ -72,4 +73,4 @@ Sugestões, melhorias e contatos podem ser enviados para o desenvolvedor. Sinta-
 
 Desenvolvido por **Emerson Pessoa** <br>
 [e-mail](mailto:emersonpessoa011108@gmail.com)<br>
-[Linkedin](https://www.linkedin.com/in/emersonpessoa01/)
+<a href="https://www.linkedin.com/in/emersonpessoa01/" target="_blank">Linkedin</a>
