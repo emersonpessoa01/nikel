@@ -46,7 +46,7 @@ Aplicativo web **Nikel** para controle financeiro pessoal, permiti visualizar sa
 - `home.html`: Tela principal, resumo do saldo, entradas, saídas, navegação.
   ![Tela principal do Nikel](./public/assets/images/tela-principal.png)
 - `transactions.html`: Histórico detalhado das transações.
-  ![Tela de login](./public/assets/images/tela-histórico.png)
+  ![Tela de login](./public/assets/images/tela-lançamento-responsiva.png)
 - `css/style.css`: Estilização completa e visual das páginas.
 - `js/index.js`, `js/home.js`, `js/transactions.js`: Lógica JS de autenticação, cadastro, lançamentos e listagem.
 - `assets/images/`: Imagens do projeto e logos.

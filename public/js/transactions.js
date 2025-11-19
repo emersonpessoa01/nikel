@@ -94,10 +94,10 @@ function getTransactions() {
 
       transactionsHtml += `
         <tr>
-            <th scope="row">${formattedDate}</th>
-            <td>${formattedValue}</td>
-            <td>${type}</td>
-            <td>${item.description}</td>
+            <td scope="row" data-label="Data">${formattedDate}</td>
+            <td data-label="Valor">${formattedValue}</td>
+            <td data-label="Tipo">${type}</td>
+            <td data-label="Descrição">${item.description}</td>
         </tr>
       `;
     });
