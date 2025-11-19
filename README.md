@@ -11,12 +11,12 @@ Segue as páginas de divulgações:
 ## Trilha Codaí 2.0
 
 <a href="https://www.plataforma.growdev.com.br/course/codai-2-0" target="_blank">
-  <img src="./assets/images/codai-logo.png" alt="Link da Growdev" title="Link da Growdev" />
+  <img src="./public/assets/images/codai-logo.png" alt="Link da Growdev" title="Link da Growdev" />
 </a>
 
 ## Descrição
 <a href="https://nikel-web.vercel.app/" target="_blank">
-  <img src="./assets/images/nikel-logo.png" alt="Logo do Aplicacativo Nikel" tilte="Logo do Aplicacativo Nikel"/>
+  <img src="./public/assets/images/nikel-logo.png" alt="Logo do Aplicacativo Nikel" tilte="Logo do Aplicacativo Nikel"/>
 </a>
 
 Aplicativo web **Nikel** para controle financeiro pessoal, permiti visualizar saldos, cadastrar lançamentos de entradas e saídas, consultar histórico e manter uma experiência visual moderna e responsiva.
@@ -39,13 +39,13 @@ Aplicativo web **Nikel** para controle financeiro pessoal, permiti visualizar sa
 ## Estrutura do Projeto
 
 - `index.html`: Tela de login e cadastro.  
-  ![Tela de login](./assets/images/tela-login02.jpg)
-  ![Tela de login](./assets/images/tela-cadastro.png)
+  ![Tela de login](./public/assets/images/tela-login02.jpg)
+  ![Tela de login](./public/assets/images/tela-cadastro.png)
 
 - `home.html`: Tela principal, resumo do saldo, entradas, saídas, navegação.
-  ![Tela principal do Nikel](./assets/images/tela-principal.png)
+  ![Tela principal do Nikel](./public/assets/images/tela-principal.png)
 - `transactions.html`: Histórico detalhado das transações.
-  ![Tela de login](./assets/images/tela-histórico.png)
+  ![Tela de login](./public/assets/images/tela-histórico.png)
 - `css/style.css`: Estilização completa e visual das páginas.
 - `js/index.js`, `js/home.js`, `js/transactions.js`: Lógica JS de autenticação, cadastro, lançamentos e listagem.
 - `assets/images/`: Imagens do projeto e logos.
