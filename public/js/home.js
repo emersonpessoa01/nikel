@@ -106,10 +106,10 @@ function getCashIn() {
       });
 
       cashInHtml += `
-            <div class="row mb-4">
+            <div class="row mb-4 p-3 rounded shadow-sm bg-white p-card">
                 <div class="col-12">
                 <h3 class="fs-2">${formattedValue}</h3>
-                <div class="container p-0">
+                <div class="container">
                     <div class="row">
                     <div class="col-12 col-md-8">
                         <p class="description">${cashIn[i].description}</p>
@@ -149,7 +149,7 @@ function getCashOut() {
       //   console.log(i);
       //   console.log(cashIn[i]);
 
-       // Formatação de data adicionando sufixo T00:00:00 para evitar inconsistências de timezone no deploy
+      // Formatação de data adicionando sufixo T00:00:00 para evitar inconsistências de timezone no deploy
       const date = new Date(cashIn[i].date + "T00:00:00");
 
       const formattedDate = date.toLocaleDateString("pt-BR", {
@@ -164,10 +164,10 @@ function getCashOut() {
         currency: "BRL",
       });
       cashInHtml += `
-            <div class="row mb-4">
+            <div class="row mb-4 p-3 rounded shadow-sm bg-white p-card">
                 <div class="col-12">
                 <h3 class="fs-2">${formattedValue}</h3>
-                <div class="container p-0">
+                <div class="container">
                     <div class="row">
                     <div class="col-12 col-md-8">
                         <p class="description">${cashIn[i].description}</p>
