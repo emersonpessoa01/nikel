@@ -46,6 +46,14 @@ document.getElementById("create-form").addEventListener("submit", function (even
     alert("A senha deve ter no mínimo 4 caracteres");
     return;
   }
+
+  // Verificar se o e-mail já foi cadastrado
+  const usuarioExistente = localStorage.getItem(email);
+
+  if(usuarioExistente){
+    alert("E-mail já cadastrado");
+     return;
+  }
   
 
   saveAccount({
