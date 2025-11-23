@@ -17,7 +17,7 @@ Segue as páginas de divulgações:
 ## Descrição
 
 <a href="https://nikel-web.vercel.app/" target="_blank">
-  <img src="./public/assets/images/nikel-logo.png" alt="Logo do Aplicacativo Nikel" title="Link do Aplicativo Nikel"/>
+  <img src="./public/assets/images/nikel-small-logo.png" alt="Logo do Aplicacativo Nikel" title="Link do Aplicativo Nikel"/>
 </a>
 
 Aplicativo web **Nikel** para controle financeiro pessoal, permiti visualizar saldos, cadastrar lançamentos de entradas e saídas, consultar histórico e manter uma experiência visual moderna e responsiva.
