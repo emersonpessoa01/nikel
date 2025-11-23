@@ -11,7 +11,7 @@ Segue as páginas de divulgações:
 ## Trilha Codaí 2.0
 
 <a href="https://www.plataforma.growdev.com.br/course/codai-2-0" target="_blank">
-  <img src="./public/assets/images/codai-logo.png" alt="Link da Growdev" title="Link da Growdev" />
+  <img src="./public/assets/images/codai.png" alt="Link da Growdev" title="Link da Growdev" />
 </a>
 
 ## Descrição
