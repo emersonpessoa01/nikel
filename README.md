@@ -11,13 +11,13 @@ Segue as páginas de divulgações:
 ## Trilha Codaí 2.0
 
 <a href="https://www.plataforma.growdev.com.br/course/codai-2-0" target="_blank">
-  <img src="https://raw.githubusercontent.com/emersonpessoa01/nikel/refs/heads/master/public/assets/images/growdev-logo.png" alt="Link da Growdev" title="Link da Growdev" />
+  <img src="./public/assets/images/growdev-logo.png" alt="Link da Growdev" title="Link da Growdev" />
 </a>
 
 ## Descrição
 
 <a href="https://nikel-web.vercel.app/" target="_blank">
-  <img src="https://raw.githubusercontent.com/emersonpessoa01/nikel/refs/heads/master/public/assets/images/nikel-small-logo.png" alt="Logo do Aplicacativo Nikel" title="Link do Aplicativo Nikel"/>
+  <img src="./public/assets/images/nikel-logo.png" alt="Logo do Aplicacativo Nikel" title="Link do Aplicativo Nikel"/>
 </a>
 
 Aplicativo web **Nikel** para controle financeiro pessoal, permiti visualizar saldos, cadastrar lançamentos de entradas e saídas, consultar histórico e manter uma experiência visual moderna e responsiva.
