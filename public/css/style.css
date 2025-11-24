@@ -234,6 +234,9 @@ table tbody tr:nth-child(odd) {
   animation: floatPhone 5s ease-in-out infinite;
 }
 
+/* Footer */
+
+
 @keyframes floatPhone {
   0% {
     transform: translateY(0px);
