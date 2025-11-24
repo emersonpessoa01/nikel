@@ -17,12 +17,8 @@ Segue as páginas de divulgações:
 </a>
 
 
-
----
-
 ## Descrição
-
-<a href="https://nikel-web.vercel.app/" target="_blank">
+<a href="https://nikel-web.vercel.app/">
   <img src="./public/assets/images/nikel-logo.png" alt="Logo do Aplicativo Nikel" title="Link do Aplicativo Nikel"/>
 </a>
 
