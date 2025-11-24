@@ -239,13 +239,14 @@ table tbody tr:nth-child(odd) {
   background: #f5f5f5;
 }
 
-/* Animação flutuante do celular */
-.img-fluid {
-  animation: floatPhone 5s ease-in-out infinite;
-}
 /* Font do footer */
 .credit {
   font-size: 1.2rem !important;
+}
+
+/* Animação flutuante do celular */
+.img-fluid.pocket {
+  animation: floatPhone 3.5s ease-in-out infinite;
 }
 
 @keyframes floatPhone {
@@ -261,11 +262,25 @@ table tbody tr:nth-child(odd) {
 }
 
 /* Animação suave das moedas */
-.coins {
-  animation: floatCoins 4.5s ease-in-out infinite;
+.img-fluid.coins {
+  animation: floatCoins 4s ease-in-out infinite;
 }
 
 @keyframes floatCoins {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+.img-fluid.logo{
+  animation: floatLogo 5s ease-in-out infinite;
+}
+@keyframes floatLogo {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
@@ -393,3 +408,4 @@ table tbody tr:nth-child(odd) {
     font-size: 0.95rem;
   }
 }
+
