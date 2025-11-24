@@ -233,6 +233,10 @@ table tbody tr:nth-child(odd) {
 .img-fluid {
   animation: floatPhone 5s ease-in-out infinite;
 }
+/* Font do footer */
+.credit {
+  font-size: 1.2rem !important;
+}
 
 @keyframes floatPhone {
   0% {
@@ -288,6 +292,11 @@ table tbody tr:nth-child(odd) {
 }
 
 /* ---- Tablet: centralizar e remover posição absoluta ---- */
+@media (max-width: 1345px) {
+  .credit {
+    font-size: 1rem !important;
+  }
+}
 @media (max-width: 1140px) {
   .coins {
     position: static !important;
@@ -300,9 +309,6 @@ table tbody tr:nth-child(odd) {
 @media (max-width: 991px) {
   .coins {
     display: none !important;
-  }
-  .credit {
-    font-size: 1rem;
   }
 }
 @media (max-width: 768px) {
