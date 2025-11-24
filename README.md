@@ -48,14 +48,14 @@ Aplicativo web **Nikel** para controle financeiro pessoal, permitindo visualizar
 ## Estrutura do Projeto
 
 - `index.html`: Tela de login e cadastro.  
-  ![Tela de login](./public/images/tela-login02.jpg)
-  ![Tela de cadastro](./public/images/tela-cadastro.png)
+  ![Tela de login](./public/assets/images/tela-login02.jpg)
+  ![Tela de cadastro](./public/assets/images/tela-cadastro.png)
 
 - `home.html`: Tela principal, resumo do saldo, entradas, saídas.
-  ![Tela principal do Nikel](./public/images/tela-principal.png)
+  ![Tela principal do Nikel](./public/assets/images/tela-principal.png)
 
 - `transactions.html`: Histórico detalhado das transações.  
-  ![Tela responsiva de lançamentos](./public/images/tela-lançamento-responsiva.png)
+  ![Tela responsiva de lançamentos](./public/assets/images/tela-lançamento-responsiva.png)
 
 - `css/style.css`: Estilização completa.
 - `js/*.js`: Lógica de autenticação, cadastro, lançamentos e histórico.
