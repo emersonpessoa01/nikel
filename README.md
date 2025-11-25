@@ -59,7 +59,7 @@ Aplicativo web **Nikel** para controle financeiro pessoal, permitindo visualizar
 
 - `css/style.css`: Estilização completa.
 - `js/*.js`: Lógica de autenticação, cadastro, lançamentos e histórico.
-- `public/images/`: Imagens e logos do projeto.
+- `public/assets/images`: Imagens e logos do projeto.
 
 ---
 
