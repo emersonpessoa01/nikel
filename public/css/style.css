@@ -8,6 +8,7 @@
   --label: #b680ff;
   --color-background: #e2dbdb;
   --color-background-light: #f7f5f5;
+  --border: 0.1px solid #fff;
 }
 
 html {
@@ -78,14 +79,51 @@ header .navbar-expand-md {
 .text-light {
   text-decoration: none !important;
 }
-/* Aumentando font-size das mídias sociais */
-:is(.fas, .far, .fab, .fa-solid, .fa-regular, .fa-brands, .fa-classic, .fa):before {
-  font-size: 1.8rem !important;
+
+/* MÍDIAS SOCIAIS */
+
+.social .bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  border: var(--border);
+  border-radius: 50%;
 }
-.fa-lg:hover {
-  color: var(--text-light-purple);
+.social .bxl-youtube:hover {
+  color: #c4302b !important;
   transition: all 0.3s ease-in-out;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+}
+.social .bxl-facebook:hover {
+  color: #1877f2; /* Azul padrão do Facebook para fallback */
+  background: -webkit-linear-gradient(45deg, #0049b7, #0066ff, #1877f2, #4a90e2, #89b9f5, #cce5ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.social .bxl-instagram:hover {
+  color: #9c47fc;
+  background: -webkit-linear-gradient(45deg, #f7ce02, #f96302, #f71102, #d32155, #b43890, #904eca, #8944bb, #7832ae);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
+}
+.social .bxl-linkedin:hover {
+  color: #0077b5; /* Cor padrão do LinkedIn para fallback */
+  background: -webkit-linear-gradient(45deg, #0a66c2, #1e90ff, #3399ff, #66b2ff, #99ccff, #cce5ff);
+  background-clip: text;
+  -webkit-background-clip: text; /* Para compatibilidade com WebKit */
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-10px);
 }
 
 .text-md-start {
@@ -277,7 +315,7 @@ table tbody tr:nth-child(odd) {
     transform: translateY(0px) rotate(0deg);
   }
 }
-.img-fluid.logo{
+.img-fluid.logo {
   animation: floatLogo 5s ease-in-out infinite;
 }
 @keyframes floatLogo {
@@ -408,4 +446,3 @@ table tbody tr:nth-child(odd) {
     font-size: 0.95rem;
   }
 }
-
