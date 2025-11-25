@@ -100,9 +100,17 @@ header .navbar-expand-md {
 }
 .social .bxl-facebook:hover {
   color: #1877f2; /* Azul padrão do Facebook para fallback */
-  background: -webkit-linear-gradient(45deg, #0049b7, #0066ff, #1877f2, #4a90e2, #89b9f5, #cce5ff);
-  background-clip: text;
+  background: -webkit-linear-gradient(
+    45deg, 
+    #0049b7,
+    #0066ff, 
+    #1877f2, 
+    #4a90e2, 
+    #89b9f5, 
+    #cce5ff
+    );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   transform: translateY(-10px);
@@ -110,7 +118,17 @@ header .navbar-expand-md {
 
 .social .bxl-instagram:hover {
   color: #9c47fc;
-  background: -webkit-linear-gradient(45deg, #f7ce02, #f96302, #f71102, #d32155, #b43890, #904eca, #8944bb, #7832ae);
+  background: -webkit-linear-gradient(
+    45deg, 
+    #f7ce02, 
+    #f96302, 
+    #f71102, 
+    #d32155, 
+    #b43890, 
+    #904eca, 
+    #8944bb, 
+    #7832ae
+    );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
@@ -118,9 +136,17 @@ header .navbar-expand-md {
 }
 .social .bxl-linkedin:hover {
   color: #0077b5; /* Cor padrão do LinkedIn para fallback */
-  background: -webkit-linear-gradient(45deg, #0a66c2, #1e90ff, #3399ff, #66b2ff, #99ccff, #cce5ff);
-  background-clip: text;
-  -webkit-background-clip: text; /* Para compatibilidade com WebKit */
+  background: -webkit-linear-gradient(
+    45deg, 
+    #0a66c2, 
+    #1e90ff, 
+    #3399ff, 
+    #66b2ff, 
+    #99ccff, 
+    #cce5ff
+    );
+  -webkit-background-clip: text;
+  background-clip: text; /* Para compatibilidade com WebKit */
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
   transform: translateY(-10px);
