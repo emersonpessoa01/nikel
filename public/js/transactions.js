@@ -105,3 +105,23 @@ function getTransactions() {
     document.getElementById("transaction-list").innerHTML = transactionsHtml;
   }
 }
+
+/* Menu hamburger */
+const toggler = document.querySelector(".navbar-toggler");
+const collapse = document.querySelector("#navbarNavAltMarkup");
+
+toggler.addEventListener("click", () => toggler.classList.toggle("active"));
+
+document.addEventListener("click", (e) => {
+  if (toggler.classList.contains("active") && !toggler.contains(e.target) && !collapse.contains(e.target)) {
+    toggler.classList.remove("active");
+    bootstrap.Collapse.getInstance(collapse)?.hide();
+  }
+});
+
+window.addEventListener("scroll", () => {
+  if (toggler.classList.contains("active")) {
+    toggler.classList.remove("active");
+    bootstrap.Collapse.getInstance(collapse)?.hide();
+  }
+});

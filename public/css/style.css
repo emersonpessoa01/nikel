@@ -62,6 +62,41 @@ header .navbar-expand-md {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
   padding: 5px;
 }
+/* Início Menu hamgurger */
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+.burger-line {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+  position: relative;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+.navbar-toggler.active .burger-line:nth-child(1) {
+  transform: rotate(45deg);
+  top: 8px;
+  position: relative;
+}
+.navbar-toggler.active .burger-line:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler.active .burger-line:nth-child(3) {
+  transform: rotate(-45deg);
+  top: -8px;
+  position: relative;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Fim Menu hamgurger */
 
 /* Logo */
 .img-logo {
@@ -100,15 +135,7 @@ header .navbar-expand-md {
 }
 .social .bxl-facebook:hover {
   color: #1877f2; /* Azul padrão do Facebook para fallback */
-  background: -webkit-linear-gradient(
-    45deg, 
-    #0049b7,
-    #0066ff, 
-    #1877f2, 
-    #4a90e2, 
-    #89b9f5, 
-    #cce5ff
-    );
+  background: -webkit-linear-gradient(45deg, #0049b7, #0066ff, #1877f2, #4a90e2, #89b9f5, #cce5ff);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -118,17 +145,7 @@ header .navbar-expand-md {
 
 .social .bxl-instagram:hover {
   color: #9c47fc;
-  background: -webkit-linear-gradient(
-    45deg, 
-    #f7ce02, 
-    #f96302, 
-    #f71102, 
-    #d32155, 
-    #b43890, 
-    #904eca, 
-    #8944bb, 
-    #7832ae
-    );
+  background: -webkit-linear-gradient(45deg, #f7ce02, #f96302, #f71102, #d32155, #b43890, #904eca, #8944bb, #7832ae);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
@@ -136,15 +153,7 @@ header .navbar-expand-md {
 }
 .social .bxl-linkedin:hover {
   color: #0077b5; /* Cor padrão do LinkedIn para fallback */
-  background: -webkit-linear-gradient(
-    45deg, 
-    #0a66c2, 
-    #1e90ff, 
-    #3399ff, 
-    #66b2ff, 
-    #99ccff, 
-    #cce5ff
-    );
+  background: -webkit-linear-gradient(45deg, #0a66c2, #1e90ff, #3399ff, #66b2ff, #99ccff, #cce5ff);
   -webkit-background-clip: text;
   background-clip: text; /* Para compatibilidade com WebKit */
   -webkit-text-fill-color: transparent;
@@ -472,3 +481,4 @@ table tbody tr:nth-child(odd) {
     font-size: 0.95rem;
   }
 }
+
